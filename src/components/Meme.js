@@ -36,10 +36,11 @@ const Meme = () => {
             <ul>
                 <li className="card">
                     <div className='card--main'>
-                        <img src={data.url} alt = "Meme"/>
+                        <img src={data?.url} alt = "Meme"/>
                     </div>
                 </li>
             </ul>
+            <button id = "btn" onClick = {() => getMemeData()}>Generate</button>
         </section>
         </>
     )
